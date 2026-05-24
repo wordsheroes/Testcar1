@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eyefind Autos</title>
+<title>سيارات Eyefind</title>
 <style>
 * {
     box-sizing: border-box;
@@ -11,7 +11,7 @@
 
 body {
     margin:0;
-    font-family:Arial;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background:#d9ecff;
     overflow-x: hidden;
 }
@@ -19,7 +19,7 @@ body {
 .topbar{
     background:#2b6cb0;
     color:white;
-    padding:15px;
+    padding:15px 25px;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -116,19 +116,19 @@ button{
 
 <div class="topbar">
     <div class="logo">eyefind.info</div>
-    <button onclick="location.href='admin.html'" style="width:auto; margin:0;">ADMIN</button>
+    <button onclick="location.href='admin.html'" style="width:auto; margin:0; padding: 10px 20px;">لوحة التحكم</button>
 </div>
 
 <div class="container">
     <div class="banner">
-        <h1>WELCOME TO EYEFIND AUTOS</h1>
-        <p>Luxury cars marketplace</p>
+        <h1>مرحباً بك في سيارات EYEFIND</h1>
+        <p>السوق الأول للسيارات الفاخرة والمميزة</p>
     </div>
 
     <div class="cards" id="cars"></div>
 
     <div class="footer">
-        Copyright © 2026 eyefind.info
+        جميع الحقوق محفوظة © 2026 eyefind.info
     </div>
 </div>
 
@@ -156,8 +156,8 @@ function load(){
             </div>
             <div class="card-content">
                 <h3>${c.name}</h3>
-                <div class="price">${c.price ? c.price + " Dh" : ""}</div>
-                <button onclick="openCar(${i})">VIEW DETAILS</button>
+                <div class="price">${c.price ? c.price + " درهم" : ""}</div>
+                <button onclick="openCar(${i})">عرض التفاصيل</button>
             </div>
         </div>
         `;
